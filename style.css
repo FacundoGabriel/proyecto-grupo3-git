@@ -1,0 +1,157 @@
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+/*Nav*/
+.navbar {
+  background-color: #cccecf67;
+  /* background-color: rgba(204, 206, 207, 0.4); */
+}
+
+.navbar-brand img {
+  width: 80px;
+}
+
+.navbar .nav-link {
+  color: black;
+}
+
+.navbar .nav-link:hover {
+  color: #292b2d;
+  border-bottom: 1px solid #292b2d;
+}
+
+.nav-row {
+  display: flex;
+  flex-direction: row;
+}
+
+/*Fin Nav*/
+
+/* Carousel */
+.carousel-inner img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.carousel-conteiner {
+  position: relative;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* Fin Carousel */
+
+/* CSS main */
+
+.article {
+  border: none;
+}
+
+.card {
+  height: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.article h2 {
+  font-size: 15px;
+}
+
+.img {
+  height: 270px;
+  transition: background 0.4s ease-in-out;
+  object-fit: contain;
+}
+
+.img:hover {
+  background: #e5e5e5;
+}
+
+/* Fin CSS main */
+
+.divisor {
+  background-image: url(img/imagen-divisor.jpg);
+  width: 100%;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.descuento h2 {
+  color: #272727;
+  opacity: 0.8;
+}
+
+.img-logo {
+  width: 160px;
+}
+
+/* HTML error 404 */
+.img-carita {
+  width: 120px;
+}
+
+.btn-error {
+  width: 210px;
+}
+
+/* HTML error 404 Fin */
+
+.img-hot-sale {
+  width: 75px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  z-index: 10; /* Asegura que quede por encima de otros elementos */
+}
+
+/* Medias Queris*/
+@media (min-width: 768px) {
+  .border-md-0 {
+    border: none !important;
+  }
+  .img-hot-sale {
+    width: 75px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    z-index: 10; /* Asegura que quede por encima de otros elementos */
+  }
+}
+
+@media (max-width: 767px) {
+  .border-sm-top {
+    border-top: 1px solid #e5e5e5;
+  }
+  .nav-row {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .img-hot-sale {
+    width: 75px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    z-index: 10; /* Asegura que quede por encima de otros elementos */
+    margin-right: 15px; /* Espacio desde los bordes de la imagen */
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #3c3c3c; /* Gris oscuro */
+    padding: 15px; /* Opcional, para un poco de espacio interior */
+  }
+
+  .navbar .nav-link {
+    color: white;
+  }
+}
